@@ -39,10 +39,10 @@ Notes:
 | PAYLOAD_INITIAL_TEXT | Overrides the default password input value. | `Enter the Password to be Shared` |
 | EXPIRE_AFTER_DAYS_DEFAULT | Controls the "Expire After Days" default value in Password#new | `7` |
 | EXPIRE_AFTER_DAYS_MIN | Controls the "Expire After Days" minimum value in Password#new | `1` |
-| EXPIRE_AFTER_DAYS_MAX | Controls the "Expire After Days" maximum value in Password#new | `90` |
+| EXPIRE_AFTER_DAYS_MAX | Controls the "Expire After Days" maximum value in Password#new | `7` |
 | EXPIRE_AFTER_VIEWS_DEFAULT | Controls the "Expire After Views" default value in Password#new | `5` |
 | EXPIRE_AFTER_VIEWS_MIN | Controls the "Expire After Views" minimum value in Password#new | `1` |
-| EXPIRE_AFTER_VIEWS_MAX | Controls the "Expire After Views" maximum value in Password#new | `100` |
+| EXPIRE_AFTER_VIEWS_MAX | Controls the "Expire After Views" maximum value in Password#new | `10` |
 | DELETABLE_PASSWORDS_ENABLED | Can passwords be deleted by viewers? When true, passwords will have a link to optionally delete the password being viewed | `false` |
 | DELETABLE_PASSWORDS_DEFAULT | When the above is `true`, this sets the default value for the option. | `true` |
 | RETRIEVAL_STEP_ENABLED | When `true`, adds an option to have a preliminary step to retrieve passwords.  | `true` |
