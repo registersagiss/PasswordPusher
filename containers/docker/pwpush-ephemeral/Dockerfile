@@ -14,7 +14,7 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources
 RUN apt-get update -qq && \
     apt-get install -qq -y --assume-yes build-essential apt-utils libpq-dev git curl tzdata libsqlite3-0 libsqlite3-dev zlib1g-dev nodejs yarn && \
     cd /opt && \
-    git clone https://dev.azure.com/Sagiss/Password%20Pusher/_git/PasswordPusher && \
+    git clone https://github.com/BfordSagiss/PasswordPusher && \
     touch ${APP_ROOT}/log/private.log
 
 EXPOSE 5100
