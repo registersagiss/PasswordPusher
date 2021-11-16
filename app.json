@@ -1,7 +1,7 @@
 {
   "name": "PasswordPusher",
   "description": "An application to communicate passwords over the web. Passwords expire after a certain number of views and/or time has passed.",
-  "repository": "https://github.com/pglombardo/PasswordPusher",
+  "repository": "https://github.com/BfordSagiss/PasswordPusher",
   "logo": "https://s3-eu-west-1.amazonaws.com/pwpush/pwpush_logo.png",
   "keywords": ["password", "security", "expire"],
   "addons": [
@@ -26,7 +26,7 @@
     },
     "EXPIRE_AFTER_DAYS_DEFAULT": {
       "description": "Default value for expire after days",
-      "value": "7"
+      "value": "3"
     },
     "EXPIRE_AFTER_DAYS_MIN": {
       "description": "Expire after days minimum value",
@@ -34,7 +34,7 @@
     },
     "EXPIRE_AFTER_DAYS_MAX": {
       "description": "Expire after days maximum value",
-      "value": "90"
+      "value": "7"
     },
     "EXPIRE_AFTER_VIEWS_DEFAULT": {
       "description": "Expire after views default value",
@@ -42,11 +42,11 @@
     },
     "EXPIRE_AFTER_VIEWS_MIN": {
       "description": "Expire after views minimum value",
-      "value": "1"
+      "value": "3"
     },
     "EXPIRE_AFTER_VIEWS_MAX": {
       "description": "Expire after views maximum value",
-      "value": "100"
+      "value": "20"
     },
     "DELETABLE_PASSWORDS_ENABLED": {
       "description": "When true, passwords will have a link to optionally delete the password being viewed. When pushing a new password, this option will also add a checkbox to conditionally enable/disable this feature on a per-password basis.",
