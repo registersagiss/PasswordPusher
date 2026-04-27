@@ -161,7 +161,8 @@ services:
     image: docker.io/pglombardo/pwpush:latest
     restart: unless-stopped
     ports:
-      - "443:443"
+      - "5100:5100"
+      # - "443:443"
       # - "80:80" # To support older browsers
       # - "5100:5100" # High port if you host pwpush behind a proxy (HTTP)
     platform: linux/amd64
