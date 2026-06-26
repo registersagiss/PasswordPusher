@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pwpush 1.0\n"
 "Report-Msgid-Bugs-To: contact@translation.io\n"
-"POT-Creation-Date: 2026-04-22 13:19+0200\n"
-"PO-Revision-Date: 2026-04-22 11:19+0000\n"
+"POT-Creation-Date: 2026-05-19 19:24+0200\n"
+"PO-Revision-Date: 2026-05-19 17:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Urdu\n"
 "Language: ur\n"
@@ -18,6 +18,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n!=1;\n"
 "\n"
 
+#: ../../../app/controllers/admin/custom_css_controller.rb:11
+msgid "Custom CSS updated successfully."
+msgstr "حسب ضرورت CSS کامیابی سے اپ ڈیٹ ہو گئی۔"
+
+#: ../../../app/controllers/admin/custom_css_controller.rb:13
+msgid "Error updating CSS: %{error}"
+msgstr "CSS کو اپ ڈیٹ کرنے میں خرابی: %{error}"
+
 #: ../../../app/controllers/admin/users_controller.rb:49
 msgid "You cannot delete your own account."
 msgstr "آپ اپنا اکاؤنٹ حذف نہیں کر سکتے۔"
@@ -25,8 +33,8 @@ msgstr "آپ اپنا اکاؤنٹ حذف نہیں کر سکتے۔"
 #: ../../../app/controllers/api/v1/pushes_controller.rb:257
 #: ../../../app/controllers/pushes_controller.rb:118
 #: ../../../app/controllers/pushes_controller.rb:158
-#: ../../../app/controllers/pushes_controller.rb:285
-#: ../../../app/controllers/pushes_controller.rb:315
+#: ../../../app/controllers/pushes_controller.rb:286
+#: ../../../app/controllers/pushes_controller.rb:316
 msgid "That push doesn't belong to you."
 msgstr "وہ دھکا آپ کا نہیں ہے۔"
 
@@ -35,10 +43,10 @@ msgid "That push is not deletable by viewers."
 msgstr "وہ دھکا ناظرین کے ذریعہ حذف نہیں کیا جاسکتا ہے۔"
 
 #: ../../../app/controllers/concerns/enforce_required_mfa.rb:19
-#: ../../../test/controllers/api/base_controller_test.rb:53
-#: ../../../test/integration/require_mfa_test.rb:29
-#: ../../../test/integration/require_mfa_test.rb:60
-#: ../../../test/integration/require_mfa_test.rb:76
+#: ../../../test/controllers/api/base_controller_test.rb:50
+#: ../../../test/integration/require_mfa_test.rb:27
+#: ../../../test/integration/require_mfa_test.rb:58
+#: ../../../test/integration/require_mfa_test.rb:74
 msgid "Two-factor authentication is required. Please set it up to continue."
 msgstr "دو عنصر کی توثیق درکار ہے۔ براہ کرم اسے جاری رکھنے کے لیے ترتیب دیں۔"
 
@@ -72,68 +80,68 @@ msgstr "آپ فی پش صرف %{count} فائلوں تک منسلک کر سکت�
 msgid "Push was successfully updated."
 msgstr "پش کامیابی کے ساتھ اپ ڈیٹ ہو گیا۔"
 
-#: ../../../app/controllers/pushes_controller.rb:278
-#: ../../../app/controllers/pushes_controller.rb:457
-#: ../../../test/integration/disable_logins_test.rb:56
+#: ../../../app/controllers/pushes_controller.rb:279
+#: ../../../app/controllers/pushes_controller.rb:458
+#: ../../../test/integration/disable_logins_test.rb:54
 msgid "The audit log is only available when signed in."
 msgstr "آڈٹ لاگ صرف سائن ان ہونے پر دستیاب ہوتا ہے۔"
 
-#: ../../../app/controllers/pushes_controller.rb:280
+#: ../../../app/controllers/pushes_controller.rb:281
 msgid "You must be signed in to view the audit log."
 msgstr "آڈٹ لاگ دیکھنے کے لیے آپ کا سائن ان ہونا ضروری ہے۔"
 
-#: ../../../app/controllers/pushes_controller.rb:295
+#: ../../../app/controllers/pushes_controller.rb:296
 msgid "That push is not deletable by viewers and does not belong to you."
 msgstr "وہ دھکا ناظرین کے ذریعہ حذف نہیں کیا جاسکتا ہے اور نہ ہی آپ کا ہے۔"
 
-#: ../../../app/controllers/pushes_controller.rb:300
-#: ../../../app/controllers/pushes_controller.rb:321
+#: ../../../app/controllers/pushes_controller.rb:301
+#: ../../../app/controllers/pushes_controller.rb:322
 msgid "That push has already expired."
 msgstr "وہ دھکا پہلے ہی ختم ہو چکا ہے۔"
 
-#: ../../../app/controllers/pushes_controller.rb:308
+#: ../../../app/controllers/pushes_controller.rb:309
 #: ../../../app/views/pushes/audit.html.erb:96
 msgid "The push content has been deleted and the secret URL expired."
 msgstr "پش مواد کو حذف کر دیا گیا ہے اور خفیہ URL کی میعاد ختم ہو گئی ہے۔"
 
-#: ../../../app/controllers/pushes_controller.rb:327
+#: ../../../app/controllers/pushes_controller.rb:328
 msgid "You cannot delete the last file from a file push."
 msgstr "آپ فائل پش سے آخری فائل کو حذف نہیں کرسکتے ہیں۔"
 
-#: ../../../app/controllers/pushes_controller.rb:336
+#: ../../../app/controllers/pushes_controller.rb:337
 msgid "File was successfully deleted."
 msgstr "فائل کامیابی کے ساتھ ڈیلیٹ کر دی گئی۔"
 
-#: ../../../app/controllers/pushes_controller.rb:338
+#: ../../../app/controllers/pushes_controller.rb:339
 msgid "File not found."
 msgstr "فائل نہیں ملی۔"
 
-#: ../../../app/controllers/pushes_controller.rb:449
-#: ../../../test/integration/disable_logins_test.rb:158
+#: ../../../app/controllers/pushes_controller.rb:450
+#: ../../../test/integration/disable_logins_test.rb:144
 msgid "The push dashboard is not available while logins are disabled."
 msgstr "لاگ ان کے غیر فعال ہونے کے دوران پش ڈیش بورڈ دستیاب نہیں ہے۔"
 
-#: ../../../app/controllers/pushes_controller.rb:482
-#: ../../../test/integration/disable_logins_test.rb:146
+#: ../../../app/controllers/pushes_controller.rb:483
+#: ../../../test/integration/disable_logins_test.rb:135
 msgid "File pushes are unavailable while logins are disabled."
 msgstr "لاگ ان غیر فعال ہونے کے دوران فائل پشز دستیاب نہیں ہیں۔"
 
-#: ../../../app/controllers/pushes_controller.rb:490
+#: ../../../app/controllers/pushes_controller.rb:491
 #: ../../../app/models/push.rb:208
 msgid "File pushes are disabled."
 msgstr "فائل پشز غیر فعال ہیں۔"
 
-#: ../../../app/controllers/pushes_controller.rb:495
+#: ../../../app/controllers/pushes_controller.rb:496
 #: ../../../app/models/push.rb:212
-#: ../../../test/controllers/urls_controller_test.rb:113
-#: ../../../test/controllers/urls_controller_test.rb:133
+#: ../../../test/controllers/urls_controller_test.rb:110
+#: ../../../test/controllers/urls_controller_test.rb:127
 msgid "URL pushes are disabled."
 msgstr "یو آر ایل پشز غیر فعال ہیں۔"
 
-#: ../../../app/controllers/pushes_controller.rb:507
+#: ../../../app/controllers/pushes_controller.rb:508
 #: ../../../app/models/push.rb:216
-#: ../../../test/controllers/qr_push_controller_test.rb:131
-#: ../../../test/controllers/qr_push_controller_test.rb:149
+#: ../../../test/controllers/qr_push_controller_test.rb:128
+#: ../../../test/controllers/qr_push_controller_test.rb:144
 msgid "QR code pushes are disabled."
 msgstr "QR کوڈ پشز غیر فعال ہیں۔"
 
@@ -161,16 +169,69 @@ msgid "Two-factor authentication is now enabled."
 msgstr "دو عنصر کی توثیق اب فعال ہے۔"
 
 #: ../../../app/controllers/users/two_factor_controller.rb:34
-#: ../../../test/integration/require_mfa_test.rb:107
+#: ../../../test/integration/require_mfa_test.rb:105
 msgid ""
 "Two-factor authentication cannot be disabled because it is required by the adm"
 "inistrator."
 msgstr "دو عنصر کی توثیق کو غیر فعال نہیں کیا جا سکتا کیونکہ یہ منتظم کے لیے ضروری ہے۔"
 
 #: ../../../app/controllers/users/two_factor_controller.rb:40
-#: ../../../test/integration/require_mfa_test.rb:124
+#: ../../../test/integration/require_mfa_test.rb:122
 msgid "Two-factor authentication has been disabled."
 msgstr "دو عنصر کی توثیق کو غیر فعال کر دیا گیا ہے۔"
+
+#: ../../../app/helpers/share_message_helper.rb:14
+msgid "Once retrieved, the link and content will be deleted upon expiration."
+msgstr ""
+"ایک بار حاصل کرنے کے بعد، لنک اور مواد کی میعاد ختم ہونے پر حذف کر دیے جائیں گ"
+"ے۔"
+
+#: ../../../app/helpers/share_message_helper.rb:18
+msgid "A secure link has been shared with you."
+msgstr "آپ کے ساتھ ایک محفوظ لنک کا اشتراک کیا گیا ہے۔"
+
+#: ../../../app/helpers/share_message_helper.rb:20
+msgid "Please find the secret link below to access the sensitive information."
+msgstr "براہ کرم نیچے خفیہ لنک تلاش کریں تاکہ حساس معلومات تک رسائی حاصل کی جا سکے۔"
+
+#: ../../../app/helpers/share_message_helper.rb:22
+#: ../../../app/views/pushes/preview.html.erb:16
+msgid "Secret link"
+msgstr "خفیہ ربط"
+
+#: ../../../app/helpers/share_message_helper.rb:24
+msgid "IMPORTANT NOTES:"
+msgstr "اہم نوٹس:"
+
+#: ../../../app/helpers/share_message_helper.rb:46
+#: ../../../app/views/pushes/preview.html.erb:74
+#: ../../../app/views/pushes/print_preview.html.erb:13
+#: ../../../app/views/pushes/show.html.erb:43
+#: ../../../app/views/pushes/show.html.erb:77
+msgid "day"
+msgid_plural "days"
+msgstr[0] "دن"
+msgstr[1] "دن"
+
+#: ../../../app/helpers/share_message_helper.rb:47
+#: ../../../app/views/pushes/preview.html.erb:76
+#: ../../../app/views/pushes/print_preview.html.erb:15
+msgid "view"
+msgid_plural "views"
+msgstr[0] "دیکھیں"
+msgstr[1] "مناظر"
+
+#: ../../../app/helpers/share_message_helper.rb:49
+msgid "This link is valid for %{days}, or %{views}, whichever occurs first."
+msgstr "یہ لنک %{days}، یا %{views} کے لیے درست ہے، جو بھی پہلے آئے۔"
+
+#: ../../../app/helpers/share_message_helper.rb:53
+msgid ""
+"For added security, you may be prompted to enter a passphrase (provided separa"
+"tely) to access the content."
+msgstr ""
+"اضافی سیکیورٹی کے لیے، آپ کو مواد تک رسائی کے لیے ایک پاس فریز داخل کرنے کے لی"
+"ے کہا جا سکتا ہے (جو الگ سے فراہم کی گئی ہے)۔"
 
 #: ../../../app/models/push.rb:123 ../../../app/models/push.rb:141
 #: ../../../app/models/push.rb:155
@@ -227,6 +288,110 @@ msgstr "ڈیٹا ایکسپلورر"
 #: ../../../app/views/layouts/mission_control/jobs/_application_selection.html.erb:34
 msgid "Background Jobs"
 msgstr "بیک گراؤنڈ نوکریاں"
+
+#: ../../../app/views/admin/_navigation.html.erb:64
+#: ../../../app/views/admin/custom_css/edit.html.erb:1
+#: ../../../app/views/admin/custom_css/edit.html.erb:6
+msgid "Custom CSS"
+msgstr "حسب ضرورت سی ایس ایس"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:7
+msgid ""
+"Add custom CSS styles to override the default appearance of your Password Push"
+"er instance."
+msgstr ""
+"اپنے پاس ورڈ پشر مثال کی ڈیفالٹ ظاہری شکل کو اوور رائیڈ کرنے کے لیے حسب ضرورت "
+"CSS طرزیں شامل کریں۔"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:16
+msgid "Use Caution"
+msgstr "احتیاط برتیں۔"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:17
+msgid ""
+"Custom CSS can break the application layout or make it unusable. Test your cha"
+"nges carefully. Invalid CSS will be ignored by browsers."
+msgstr ""
+"حسب ضرورت سی ایس ایس ایپلیکیشن لے آؤٹ کو توڑ سکتا ہے یا اسے ناقابل استعمال بنا"
+" سکتا ہے۔ اپنی تبدیلیوں کو احتیاط سے جانچیں۔ غلط CSS کو براؤزرز نظر انداز کر د"
+"یں گے۔"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:27
+msgid "Looking for Themes?"
+msgstr "تھیمز تلاش کر رہے ہیں؟"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:29
+msgid ""
+"Password Pusher includes 26 built-in themes that can be set via the %{code_sta"
+"rt}PWP__THEME%{code_end} environment variable. No custom CSS needed for most b"
+"randing changes."
+msgstr ""
+"پاس ورڈ پشر میں 26 بلٹ ان تھیمز شامل ہیں جنہیں %{code_start}PWP__THEME%{code_e"
+"nd} ماحولیاتی متغیر کے ذریعے سیٹ کیا جا سکتا ہے۔ زیادہ تر برانڈنگ تبدیلیوں کے "
+"لیے حسب ضرورت CSS کی ضرورت نہیں ہے۔"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:31
+msgid "View the Theme Gallery"
+msgstr "تھیم گیلری دیکھیں"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:41
+msgid "Custom Stylesheet"
+msgstr "حسب ضرورت اسٹائل شیٹ"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:45
+msgid ""
+"/* Add your custom CSS here */\n"
+"\n"
+"body {\n"
+"  background-color: #f5f5f5;\n"
+"}"
+msgstr "/* یہاں اپنی مرضی کے مطابق CSS شامل کریں */ body { پس منظر کا رنگ: #f5f5f5; }"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:51
+msgid ""
+"CSS entered here will be injected into every page. Changes take effect immedia"
+"tely after saving."
+msgstr ""
+"یہاں درج سی ایس ایس کو ہر صفحہ میں داخل کیا جائے گا۔ تبدیلیاں محفوظ کرنے کے فو"
+"راً بعد لاگو ہوتی ہیں۔"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:57
+msgid "Tip: Use Ctrl+Enter (or Cmd+Enter on Mac) to save quickly"
+msgstr ""
+"مشورہ: تیزی سے محفوظ کرنے کے لیے Ctrl+Enter (یا Mac پر Cmd+Enter) استعمال کریں"
+"۔"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:59
+msgid "Save Custom CSS"
+msgstr "اپنی مرضی کے مطابق سی ایس ایس کو محفوظ کریں۔"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:68
+msgid "Common Customization Examples"
+msgstr "حسب ضرورت کی عام مثالیں۔"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:72
+msgid "Make the password textarea larger with monospace font"
+msgstr "مونو اسپیس فونٹ کے ساتھ پاس ورڈ ٹیکسٹ ایریا کو بڑا بنائیں"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:82
+msgid "Style the Generate Password button with gradient"
+msgstr "گریڈینٹ کے ساتھ جنریٹ پاس ورڈ بٹن کو اسٹائل کریں۔"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:92
+msgid "Customize slider appearance"
+msgstr "سلائیڈر کی ظاہری شکل کو اپنی مرضی کے مطابق بنائیں"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:104
+msgid "Style the Push It button"
+msgstr "پش اٹ بٹن کو اسٹائل کریں۔"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:116
+msgid "Highlight the passphrase field when focused"
+msgstr "فوکس ہونے پر پاس فریز فیلڈ کو نمایاں کریں۔"
+
+#: ../../../app/views/admin/custom_css/edit.html.erb:125
+msgid "Add card-style borders to form sections"
+msgstr "حصے بنانے کے لیے کارڈ طرز کی سرحدیں شامل کریں۔"
 
 #: ../../../app/views/admin/index.html.erb:1
 #: ../../../app/views/layouts/admin.html.erb:38
@@ -524,18 +689,19 @@ msgstr ""
 "اگر ملاحظات باقی رہتے ہیں تو آپ نئے ڈاؤن لوڈ لنکس کو دوبارہ تخلیق کرنے کے لیے "
 "صفحہ کو ریفریش کر سکتے ہیں۔"
 
-#: ../../../app/views/application/_secret_url_bar.html.erb:14
+#: ../../../app/views/application/_secret_url_bar.html.erb:15
 msgid "Secret Link Language"
 msgstr "خفیہ لنک کی زبان"
 
-#: ../../../app/views/application/_secret_url_bar.html.erb:19
+#: ../../../app/views/application/_secret_url_bar.html.erb:20
 msgid "Autodetect the recipient's language"
 msgstr "خودکار پتہ لگانا"
 
-#: ../../../app/views/application/_secret_url_bar.html.erb:38
+#: ../../../app/views/application/_secret_url_bar.html.erb:39
 #: ../../../app/views/pages/generate_key.html.erb:36
 #: ../../../app/views/pages/generate_key.html.erb:46
 #: ../../../app/views/shared/_copy_button.html.erb:2
+#: ../../../app/views/shared/_share_message.html.erb:11
 msgid "Copy to Clipboard"
 msgstr "کلپ بورڈ پر کاپی کریں۔"
 
@@ -552,7 +718,7 @@ msgstr "دیکھنے کی حد میں شمار نہیں ہوتا ہے۔"
 #: ../../../app/views/audit_logs/_log_creation.html.erb:8
 #: ../../../app/views/audit_logs/_log_edit.html.erb:8
 #: ../../../app/views/audit_logs/_log_expire.html.erb:8
-#: ../../../app/views/audit_logs/_log_failed_passphrase.html.erb:5
+#: ../../../app/views/audit_logs/_log_failed_passphrase.html.erb:8
 #: ../../../app/views/audit_logs/_log_failed_view.html.erb:8
 #: ../../../app/views/audit_logs/_log_owner_view.html.erb:9
 #: ../../../app/views/audit_logs/_log_view.html.erb:8
@@ -563,7 +729,7 @@ msgstr "آئی پی ایڈریس:"
 #: ../../../app/views/audit_logs/_log_creation.html.erb:10
 #: ../../../app/views/audit_logs/_log_edit.html.erb:10
 #: ../../../app/views/audit_logs/_log_expire.html.erb:10
-#: ../../../app/views/audit_logs/_log_failed_passphrase.html.erb:7
+#: ../../../app/views/audit_logs/_log_failed_passphrase.html.erb:10
 #: ../../../app/views/audit_logs/_log_failed_view.html.erb:10
 #: ../../../app/views/audit_logs/_log_owner_view.html.erb:11
 #: ../../../app/views/audit_logs/_log_view.html.erb:10
@@ -578,8 +744,8 @@ msgstr "صارف ایجنٹ:"
 #: ../../../app/views/audit_logs/_log_edit.html.erb:12
 #: ../../../app/views/audit_logs/_log_expire.html.erb:10
 #: ../../../app/views/audit_logs/_log_expire.html.erb:12
-#: ../../../app/views/audit_logs/_log_failed_passphrase.html.erb:7
-#: ../../../app/views/audit_logs/_log_failed_passphrase.html.erb:9
+#: ../../../app/views/audit_logs/_log_failed_passphrase.html.erb:10
+#: ../../../app/views/audit_logs/_log_failed_passphrase.html.erb:12
 #: ../../../app/views/audit_logs/_log_failed_view.html.erb:10
 #: ../../../app/views/audit_logs/_log_failed_view.html.erb:12
 #: ../../../app/views/audit_logs/_log_owner_view.html.erb:11
@@ -594,7 +760,7 @@ msgstr "کوئی نہیں۔"
 #: ../../../app/views/audit_logs/_log_creation.html.erb:12
 #: ../../../app/views/audit_logs/_log_edit.html.erb:12
 #: ../../../app/views/audit_logs/_log_expire.html.erb:12
-#: ../../../app/views/audit_logs/_log_failed_passphrase.html.erb:9
+#: ../../../app/views/audit_logs/_log_failed_passphrase.html.erb:12
 #: ../../../app/views/audit_logs/_log_failed_view.html.erb:12
 #: ../../../app/views/audit_logs/_log_owner_view.html.erb:13
 #: ../../../app/views/audit_logs/_log_view.html.erb:12
@@ -614,12 +780,8 @@ msgid "Manually expired on %{date} by %{user}"
 msgstr "پش دستی طور پر %{date} پر %{user} کے ذریعے ختم ہو گیا"
 
 #: ../../../app/views/audit_logs/_log_failed_passphrase.html.erb:3
-msgid "Failed passphrase attempt on"
-msgstr "پاس فریز کی ناکام کوشش آن"
-
-#: ../../../app/views/audit_logs/_log_failed_passphrase.html.erb:3
-msgid "by %{user}"
-msgstr "بذریعہ %{user}"
+msgid "Failed passphrase attempt on %{date} by %{user}"
+msgstr "%{date} پر %{user} کے ذریعے پاس فریز کی ناکام کوشش"
 
 #: ../../../app/views/audit_logs/_log_failed_view.html.erb:3
 msgid "Failed view attempt on %{date} by %{user}"
@@ -637,27 +799,11 @@ msgstr "%{date} پر %{user} کی کامیاب دیکھنے"
 msgid "Click Here to Confirm Your Account"
 msgstr "اپنے اکاؤنٹ کی تصدیق کے لیے یہاں کلک کریں۔"
 
-#: ../../../app/views/devise/mailer/confirmation_instructions.html.erb:8
-#: ../../../app/views/devise/mailer/email_changed.html.erb:8
-#: ../../../app/views/devise/mailer/password_change.html.erb:8
-#: ../../../app/views/devise/mailer/reset_password_instructions.html.erb:8
-#: ../../../app/views/devise/mailer/unlock_instructions.html.erb:8
-#: ../../../app/views/layouts/application.html.erb:8
-#: ../../../app/views/layouts/bare.html.erb:8
-#: ../../../app/views/layouts/login.html.erb:8
-#: ../../../app/views/layouts/naked.html.erb:8
-msgid ""
-"Password Pusher is an application to securely send passwords over the web. Lin"
-"ks to passwords expire after a certain number of views and/or time has passed."
-msgstr ""
-"پاس ورڈ پشر ویب پر محفوظ طریقے سے پاس ورڈ بھیجنے کے لیے ایک ایپلی کیشن ہے۔ پاس"
-" ورڈز کے لنکس ایک مخصوص تعداد اور/یا وقت گزر جانے کے بعد ختم ہو جاتے ہیں۔"
-
-#: ../../../app/views/devise/mailer/confirmation_instructions.html.erb:19
+#: ../../../app/views/devise/mailer/confirmation_instructions.html.erb:1
 msgid "Confirm your new account"
 msgstr "اپنے نئے اکاؤنٹ کی تصدیق کریں۔"
 
-#: ../../../app/views/devise/mailer/confirmation_instructions.html.erb:20
+#: ../../../app/views/devise/mailer/confirmation_instructions.html.erb:2
 msgid ""
 "Your account has been created but you must confirm that you own this email add"
 "ress."
@@ -665,51 +811,51 @@ msgstr ""
 "آپ کا اکاؤنٹ بن گیا ہے لیکن آپ کو اس بات کی تصدیق کرنی ہوگی کہ آپ اس ای میل ای"
 "ڈریس کے مالک ہیں۔"
 
-#: ../../../app/views/devise/mailer/confirmation_instructions.html.erb:23
+#: ../../../app/views/devise/mailer/confirmation_instructions.html.erb:5
 msgid "You can confirm your account email by"
 msgstr "آپ اپنے اکاؤنٹ کے ای میل کی تصدیق کر سکتے ہیں۔"
 
-#: ../../../app/views/devise/mailer/confirmation_instructions.html.erb:24
-#: ../../../app/views/devise/mailer/reset_password_instructions.html.erb:22
+#: ../../../app/views/devise/mailer/confirmation_instructions.html.erb:6
+#: ../../../app/views/devise/mailer/reset_password_instructions.html.erb:4
 msgid "by clicking this link"
 msgstr "اس لنک پر کلک کر کے"
 
-#: ../../../app/views/devise/mailer/confirmation_instructions.html.erb:25
-#: ../../../app/views/devise/mailer/reset_password_instructions.html.erb:23
+#: ../../../app/views/devise/mailer/confirmation_instructions.html.erb:7
+#: ../../../app/views/devise/mailer/reset_password_instructions.html.erb:5
 msgid "or by copying and pasting the following URL into your browser:"
 msgstr "یا درج ذیل یو آر ایل کو اپنے براؤزر میں کاپی اور پیسٹ کر کے:"
 
-#: ../../../app/views/devise/mailer/confirmation_instructions.html.erb:32
+#: ../../../app/views/devise/mailer/confirmation_instructions.html.erb:14
 msgid "If you didn't create an account, no action is required."
 msgstr "اگر آپ نے اکاؤنٹ نہیں بنایا تو کسی کارروائی کی ضرورت نہیں ہے۔"
 
-#: ../../../app/views/devise/mailer/email_changed.html.erb:19
+#: ../../../app/views/devise/mailer/email_changed.html.erb:1
 msgid "Your email is being changed"
 msgstr "آپ کا ای میل تبدیل کیا جا رہا ہے۔"
 
-#: ../../../app/views/devise/mailer/email_changed.html.erb:21
+#: ../../../app/views/devise/mailer/email_changed.html.erb:3
 msgid "We're contacting you to notify you that your email at"
 msgstr "ہم آپ کو مطلع کرنے کے لیے آپ سے رابطہ کر رہے ہیں کہ آپ کا ای میل اس پر ہے۔"
 
-#: ../../../app/views/devise/mailer/email_changed.html.erb:25
+#: ../../../app/views/devise/mailer/email_changed.html.erb:7
 msgid "is being changed to %s"
 msgstr "%s میں تبدیل کیا جا رہا ہے۔"
 
-#: ../../../app/views/devise/mailer/email_changed.html.erb:27
+#: ../../../app/views/devise/mailer/email_changed.html.erb:9
 msgid "has been changed to %s"
 msgstr "%s میں تبدیل کر دیا گیا ہے۔"
 
-#: ../../../app/views/devise/mailer/password_change.html.erb:19
+#: ../../../app/views/devise/mailer/password_change.html.erb:1
 msgid "Password Change"
 msgstr "پاس ورڈ کی تبدیلی"
 
-#: ../../../app/views/devise/mailer/password_change.html.erb:21
+#: ../../../app/views/devise/mailer/password_change.html.erb:3
 msgid "We're contacting you to notify you that your password has been changed on"
 msgstr ""
 "ہم آپ کو مطلع کرنے کے لیے آپ سے رابطہ کر رہے ہیں کہ آپ کا پاس ورڈ تبدیل کر دیا"
 " گیا ہے۔"
 
-#: ../../../app/views/devise/mailer/password_change.html.erb:24
+#: ../../../app/views/devise/mailer/password_change.html.erb:6
 msgid ""
 "If you didn't initiate this and it wasn't your intention, please contact us as"
 " soon as possible."
@@ -717,11 +863,11 @@ msgstr ""
 "اگر آپ نے یہ شروع نہیں کیا اور یہ آپ کا ارادہ نہیں تھا، تو براہ کرم جلد از جلد"
 " ہم سے رابطہ کریں۔"
 
-#: ../../../app/views/devise/mailer/reset_password_instructions.html.erb:19
+#: ../../../app/views/devise/mailer/reset_password_instructions.html.erb:1
 msgid "Password Change Request"
 msgstr "پاس ورڈ کی تبدیلی کی درخواست"
 
-#: ../../../app/views/devise/mailer/reset_password_instructions.html.erb:21
+#: ../../../app/views/devise/mailer/reset_password_instructions.html.erb:3
 msgid ""
 "Someone has requested a link to change your password. You can proceed with thi"
 "s action"
@@ -729,13 +875,13 @@ msgstr ""
 "کسی نے آپ کا پاس ورڈ تبدیل کرنے کے لیے ایک لنک کی درخواست کی ہے۔ آپ اس کارروائ"
 "ی کے ساتھ آگے بڑھ سکتے ہیں۔"
 
-#: ../../../app/views/devise/mailer/reset_password_instructions.html.erb:31
+#: ../../../app/views/devise/mailer/reset_password_instructions.html.erb:13
 msgid "If you didn't request this change, you can safely delete this email."
 msgstr ""
 "اگر آپ نے اس تبدیلی کی درخواست نہیں کی ہے، تو آپ اس ای میل کو محفوظ طریقے سے ح"
 "ذف کر سکتے ہیں۔"
 
-#: ../../../app/views/devise/mailer/reset_password_instructions.html.erb:32
+#: ../../../app/views/devise/mailer/reset_password_instructions.html.erb:14
 msgid ""
 "Your password won't change until you access the link above and create a new on"
 "e."
@@ -743,21 +889,21 @@ msgstr ""
 "آپ کا پاس ورڈ تبدیل نہیں ہو گا جب تک آپ اوپر لنک پر نہ جایں اور ایک نیا بنائیں"
 "۔"
 
-#: ../../../app/views/devise/mailer/unlock_instructions.html.erb:19
+#: ../../../app/views/devise/mailer/unlock_instructions.html.erb:1
 msgid "Unlock Your Account"
 msgstr "اپنا اکاؤنٹ غیر مقفل کریں۔"
 
-#: ../../../app/views/devise/mailer/unlock_instructions.html.erb:22
+#: ../../../app/views/devise/mailer/unlock_instructions.html.erb:4
 msgid ""
 "Your account has been locked due to an excessive number of unsuccessful sign i"
 "n attempts."
 msgstr "یکے بعد دیگرے ناکام لاگ ان کوششوں کی وجہ سے آپ کا کھاتا بند کردیا گیا ہے۔"
 
-#: ../../../app/views/devise/mailer/unlock_instructions.html.erb:26
+#: ../../../app/views/devise/mailer/unlock_instructions.html.erb:8
 msgid "Click this link"
 msgstr "اس لنک پر کلک کریں۔"
 
-#: ../../../app/views/devise/mailer/unlock_instructions.html.erb:27
+#: ../../../app/views/devise/mailer/unlock_instructions.html.erb:9
 msgid ""
 "to unlock your account or by copying and pasting the following URL into your b"
 "rowser:"
@@ -913,6 +1059,17 @@ msgstr "سسٹم ایکٹو"
 msgid "Back to App"
 msgstr "ایپ پر واپس جائیں۔"
 
+#: ../../../app/views/layouts/application.html.erb:8
+#: ../../../app/views/layouts/bare.html.erb:8
+#: ../../../app/views/layouts/login.html.erb:8
+#: ../../../app/views/layouts/naked.html.erb:8
+msgid ""
+"Password Pusher is an application to securely send passwords over the web. Lin"
+"ks to passwords expire after a certain number of views and/or time has passed."
+msgstr ""
+"پاس ورڈ پشر ویب پر محفوظ طریقے سے پاس ورڈ بھیجنے کے لیے ایک ایپلی کیشن ہے۔ پاس"
+" ورڈز کے لنکس ایک مخصوص تعداد اور/یا وقت گزر جانے کے بعد ختم ہو جاتے ہیں۔"
+
 #: ../../../app/views/layouts/login.html.erb:33
 #: ../../../app/views/shared/_footer.html.erb:10
 #: ../../../app/views/shared/_footer.html.erb:14
@@ -1059,7 +1216,7 @@ msgstr "ترمیم کریں %{name}"
 #: ../../../app/views/madmin/application/index.html.erb:77
 #: ../../../app/views/madmin/application/show.html.erb:25
 #: ../../../app/views/pushes/index.html.erb:103
-#: ../../../app/views/pushes/preview.html.erb:110
+#: ../../../app/views/pushes/preview.html.erb:121
 msgid "Edit"
 msgstr "ترمیم"
 
@@ -1583,7 +1740,7 @@ msgstr ""
 
 #: ../../../app/views/pages/about.html.erb:135
 #: ../../../app/views/pages/about.html.erb:141
-#: ../../../app/views/pushes/preview.html.erb:61
+#: ../../../app/views/pushes/preview.html.erb:75
 #: ../../../app/views/pushes/print_preview.html.erb:14
 #: ../../../app/views/pushes/show.html.erb:46
 #: ../../../app/views/pushes/show.html.erb:49
@@ -1649,8 +1806,8 @@ msgid "Talk directly with the founder and team"
 msgstr "بانی اور ٹیم سے براہ راست بات کریں۔"
 
 #: ../../../app/views/pages/about.html.erb:162
-msgid "14+ years of proven track record with Password Pusher"
-msgstr "پاس ورڈ پشر کے ساتھ 14+ سال کا ثابت شدہ ٹریک ریکارڈ"
+msgid "15+ years of proven track record with Password Pusher"
+msgstr "پاس ورڈ پشر کے ساتھ 15+ سال کا ثابت شدہ ٹریک ریکارڈ"
 
 #: ../../../app/views/pages/about.html.erb:167
 msgid "Want to Help?"
@@ -1775,49 +1932,89 @@ msgid "Version Endpoint"
 msgstr "ورژن اینڈ پوائنٹ"
 
 #: ../../../app/views/pages/api.html.erb:42
-msgid "Returns API and application version details."
-msgstr "API اور ایپلیکیشن ورژن کی تفصیلات لوٹاتا ہے۔"
+msgid ""
+"Returns API version, application details, and a features hash describing which"
+" capabilities are enabled on this instance."
+msgstr ""
+"API ورژن، ایپلیکیشن کی تفصیلات، اور ایک فیچر ہیش لوٹاتا ہے جو یہ بتاتا ہے کہ ا"
+"س مثال پر کون سی صلاحیتیں فعال ہیں۔"
 
 #: ../../../app/views/pages/api.html.erb:43
-#: ../../../app/views/pages/api.html.erb:113
-#: ../../../app/views/pages/api.html.erb:122
-#: ../../../app/views/pages/api.html.erb:132
-#: ../../../app/views/pages/api.html.erb:142
-#: ../../../app/views/pages/api.html.erb:153
-#: ../../../app/views/pages/api.html.erb:164
+#: ../../../app/views/pages/api.html.erb:150
+#: ../../../app/views/pages/api.html.erb:159
+#: ../../../app/views/pages/api.html.erb:169
+#: ../../../app/views/pages/api.html.erb:179
+#: ../../../app/views/pages/api.html.erb:190
+#: ../../../app/views/pages/api.html.erb:201
 msgid "cURL example:"
 msgstr "cURL مثال:"
 
-#: ../../../app/views/pages/api.html.erb:53
+#: ../../../app/views/pages/api.html.erb:75
+msgid "Features Hash"
+msgstr "خصوصیات ہیش"
+
+#: ../../../app/views/pages/api.html.erb:77
+msgid "Whether anonymous API usage is allowed (Settings.allow_anonymous)"
+msgstr "آیا گمنام API کے استعمال کی اجازت ہے (Settings.allow_anonymous)"
+
+#: ../../../app/views/pages/api.html.erb:78
+msgid "Bearer token authentication support"
+msgstr "بیئرر ٹوکن کی توثیق کی حمایت"
+
+#: ../../../app/views/pages/api.html.erb:79
+msgid "Accounts API availability (not available in OSS)"
+msgstr "اکاؤنٹس API کی دستیابی (OSS میں دستیاب نہیں)"
+
+#: ../../../app/views/pages/api.html.erb:80
+msgid "Push creation and management via API"
+msgstr "API کے ذریعے تخلیق اور انتظام کو آگے بڑھائیں۔"
+
+#: ../../../app/views/pages/api.html.erb:81
+msgid "File attachments on pushes (Settings.enable_file_pushes)"
+msgstr "پشز پر فائل منسلکات (Settings.enable_file_pushes)"
+
+#: ../../../app/views/pages/api.html.erb:82
+msgid "URL push type (Settings.enable_url_pushes)"
+msgstr "URL پش کی قسم (Settings.enable_url_pushes)"
+
+#: ../../../app/views/pages/api.html.erb:83
+msgid "QR code push type (Settings.enable_qr_pushes)"
+msgstr "QR کوڈ پش کی قسم (Settings.enable_qr_pushes)"
+
+#: ../../../app/views/pages/api.html.erb:84
+msgid "Requests API availability (not available in OSS)"
+msgstr "API کی دستیابی کی درخواست کرتا ہے (OSS میں دستیاب نہیں)"
+
+#: ../../../app/views/pages/api.html.erb:90
 msgid "Push Endpoints"
 msgstr "پش اینڈ پوائنٹس"
 
-#: ../../../app/views/pages/api.html.erb:58
+#: ../../../app/views/pages/api.html.erb:95
 msgid "Create a new push."
 msgstr "ایک نیا دھکا بنائیں۔"
 
-#: ../../../app/views/pages/api.html.erb:59
+#: ../../../app/views/pages/api.html.erb:96
 msgid "Body format:"
 msgstr "باڈی فارمیٹ:"
 
-#: ../../../app/views/pages/api.html.erb:64
+#: ../../../app/views/pages/api.html.erb:101
 msgid "Parameter"
 msgstr "پیرامیٹر"
 
-#: ../../../app/views/pages/api.html.erb:65
+#: ../../../app/views/pages/api.html.erb:102
 #: ../../../app/views/pushes/index.html.erb:33
 msgid "Type"
 msgstr "قسم"
 
-#: ../../../app/views/pages/api.html.erb:66
+#: ../../../app/views/pages/api.html.erb:103
 msgid "Required"
 msgstr "درکار ہے۔"
 
-#: ../../../app/views/pages/api.html.erb:67
+#: ../../../app/views/pages/api.html.erb:104
 msgid "Description"
 msgstr "تفصیل"
 
-#: ../../../app/views/pages/api.html.erb:71
+#: ../../../app/views/pages/api.html.erb:108
 #: ../../../app/views/pushes/audit.html.erb:53
 #: ../../../app/views/pushes/audit.html.erb:66
 #: ../../../app/views/pushes/audit.html.erb:80
@@ -1825,19 +2022,19 @@ msgstr "تفصیل"
 msgid "Yes"
 msgstr "جی ہاں"
 
-#: ../../../app/views/pages/api.html.erb:71
+#: ../../../app/views/pages/api.html.erb:108
 msgid "Secret text payload for text, URL or QR pushes."
 msgstr "ٹیکسٹ، یو آر ایل یا کیو آر پشز کے لیے خفیہ ٹیکسٹ پے لوڈ۔"
 
-#: ../../../app/views/pages/api.html.erb:72
-#: ../../../app/views/pages/api.html.erb:73
-#: ../../../app/views/pages/api.html.erb:74
-#: ../../../app/views/pages/api.html.erb:75
-#: ../../../app/views/pages/api.html.erb:76
-#: ../../../app/views/pages/api.html.erb:77
-#: ../../../app/views/pages/api.html.erb:78
-#: ../../../app/views/pages/api.html.erb:79
-#: ../../../app/views/pages/api.html.erb:80
+#: ../../../app/views/pages/api.html.erb:109
+#: ../../../app/views/pages/api.html.erb:110
+#: ../../../app/views/pages/api.html.erb:111
+#: ../../../app/views/pages/api.html.erb:112
+#: ../../../app/views/pages/api.html.erb:113
+#: ../../../app/views/pages/api.html.erb:114
+#: ../../../app/views/pages/api.html.erb:115
+#: ../../../app/views/pages/api.html.erb:116
+#: ../../../app/views/pages/api.html.erb:117
 #: ../../../app/views/pushes/audit.html.erb:55
 #: ../../../app/views/pushes/audit.html.erb:68
 #: ../../../app/views/pushes/audit.html.erb:78
@@ -1845,7 +2042,7 @@ msgstr "ٹیکسٹ، یو آر ایل یا کیو آر پشز کے لیے خفی
 msgid "No"
 msgstr "نہیں"
 
-#: ../../../app/views/pages/api.html.erb:72
+#: ../../../app/views/pages/api.html.erb:109
 msgid ""
 "Files to attach. When present, the push type becomes file unless kind is expli"
 "citly provided."
@@ -1853,49 +2050,49 @@ msgstr ""
 "منسلک کرنے کے لیے فائلیں۔ موجود ہونے پر، push قسم فائل بن جاتی ہے جب تک کہ قسم"
 " واضح طور پر فراہم نہ کی جائے۔"
 
-#: ../../../app/views/pages/api.html.erb:73
+#: ../../../app/views/pages/api.html.erb:110
 msgid "Push type: text, file, url, or qr. Defaults to text when not provided."
 msgstr ""
 "پش ٹائپ: ٹیکسٹ، فائل، یو آر ایل، یا کیو آر۔ فراہم نہ کیے جانے پر ٹیکسٹ کے لیے "
 "ڈیفالٹ۔"
 
-#: ../../../app/views/pages/api.html.erb:74
+#: ../../../app/views/pages/api.html.erb:111
 msgid "Expiration window in days. If omitted, instance defaults are used."
 msgstr ""
 "دنوں میں ختم ہونے والی ونڈو۔ اگر چھوڑ دیا جائے تو، مثال کے طور پر ڈیفالٹس استع"
 "مال کیے جاتے ہیں۔"
 
-#: ../../../app/views/pages/api.html.erb:75
+#: ../../../app/views/pages/api.html.erb:112
 msgid "Maximum allowed retrieval count. If omitted, instance defaults are used."
 msgstr ""
 "زیادہ سے زیادہ اجازت شدہ بازیافت کی گنتی۔ اگر چھوڑ دیا جائے تو، مثال کے طور پر"
 " ڈیفالٹس استعمال کیے جاتے ہیں۔"
 
-#: ../../../app/views/pages/api.html.erb:76
+#: ../../../app/views/pages/api.html.erb:113
 msgid "Allows the recipient to expire the push."
 msgstr "وصول کنندہ کو پش کی میعاد ختم کرنے کی اجازت دیتا ہے۔"
 
-#: ../../../app/views/pages/api.html.erb:77
+#: ../../../app/views/pages/api.html.erb:114
 msgid "Adds an extra retrieval confirmation step."
 msgstr "ایک اضافی بازیافت کا تصدیقی مرحلہ شامل کرتا ہے۔"
 
-#: ../../../app/views/pages/api.html.erb:78
+#: ../../../app/views/pages/api.html.erb:115
 msgid "Requires this passphrase to retrieve the payload."
 msgstr "پے لوڈ کو بازیافت کرنے کے لیے اس پاس فریز کی ضرورت ہے۔"
 
-#: ../../../app/views/pages/api.html.erb:79
+#: ../../../app/views/pages/api.html.erb:116
 msgid "Optional label shown to the owner."
 msgstr "اختیاری لیبل مالک کو دکھایا گیا ہے۔"
 
-#: ../../../app/views/pages/api.html.erb:80
+#: ../../../app/views/pages/api.html.erb:117
 msgid "Optional owner-only note."
 msgstr "اختیاری صرف مالک نوٹ۔"
 
-#: ../../../app/views/pages/api.html.erb:94
+#: ../../../app/views/pages/api.html.erb:131
 msgid "cURL example (JSON body):"
 msgstr "cURL مثال (JSON باڈی):"
 
-#: ../../../app/views/pages/api.html.erb:111
+#: ../../../app/views/pages/api.html.erb:148
 msgid ""
 "Retrieve a push payload by token. This counts as a view and may expire the pus"
 "h when limits are reached."
@@ -1903,36 +2100,36 @@ msgstr ""
 "ٹوکن کے ذریعہ پش پے لوڈ بازیافت کریں۔ یہ ایک منظر کے طور پر شمار ہوتا ہے اور ح"
 "د تک پہنچنے پر پش ختم ہو سکتا ہے۔"
 
-#: ../../../app/views/pages/api.html.erb:112
-#: ../../../app/views/pages/api.html.erb:131
-#: ../../../app/views/pages/api.html.erb:152
-#: ../../../app/views/pages/api.html.erb:163
+#: ../../../app/views/pages/api.html.erb:149
+#: ../../../app/views/pages/api.html.erb:168
+#: ../../../app/views/pages/api.html.erb:189
+#: ../../../app/views/pages/api.html.erb:200
 msgid "Query parameters:"
 msgstr "سوال کے پیرامیٹرز:"
 
-#: ../../../app/views/pages/api.html.erb:112
+#: ../../../app/views/pages/api.html.erb:149
 msgid "optional, required when the push is passphrase-protected"
 msgstr "اختیاری، ضروری ہے جب پش پاس فریز سے محفوظ ہو۔"
 
-#: ../../../app/views/pages/api.html.erb:121
+#: ../../../app/views/pages/api.html.erb:158
 msgid ""
 "Returns the fully-qualified secret URL for a push without retrieving its paylo"
 "ad."
 msgstr "پش کے لیے مکمل طور پر اہل خفیہ URL اس کے پے لوڈ کو بازیافت کیے بغیر لوٹاتا ہے۔"
 
-#: ../../../app/views/pages/api.html.erb:130
+#: ../../../app/views/pages/api.html.erb:167
 msgid ""
 "Return audit log entries for a push. Authentication and ownership are required"
 "."
 msgstr "ایک دھکا کے لیے آڈٹ لاگ اندراجات واپس کریں۔ تصدیق اور ملکیت درکار ہے۔"
 
-#: ../../../app/views/pages/api.html.erb:131
-#: ../../../app/views/pages/api.html.erb:152
-#: ../../../app/views/pages/api.html.erb:163
+#: ../../../app/views/pages/api.html.erb:168
+#: ../../../app/views/pages/api.html.erb:189
+#: ../../../app/views/pages/api.html.erb:200
 msgid "optional, integer, default 1, valid range 1 to 200"
 msgstr "اختیاری، عددی، ڈیفالٹ 1، درست حد 1 سے 200 تک"
 
-#: ../../../app/views/pages/api.html.erb:141
+#: ../../../app/views/pages/api.html.erb:178
 msgid ""
 "Expire a push immediately. Allowed for owners (when authenticated) or for reci"
 "pients when the push was created with deletable_by_viewer enabled."
@@ -1940,47 +2137,47 @@ msgstr ""
 "فوری طور پر ایک دھکا ختم کریں۔ مالکان کے لیے (جب تصدیق شدہ ہو) یا وصول کنندگان"
 " کے لیے اجازت دی جاتی ہے جب deletable_by_viewer کو فعال کر کے پش بنایا گیا ہو۔"
 
-#: ../../../app/views/pages/api.html.erb:151
+#: ../../../app/views/pages/api.html.erb:188
 msgid "List active pushes for the authenticated user."
 msgstr "تصدیق شدہ صارف کے لیے فعال پشز کی فہرست بنائیں۔"
 
-#: ../../../app/views/pages/api.html.erb:162
+#: ../../../app/views/pages/api.html.erb:199
 msgid "List expired pushes for the authenticated user."
 msgstr "مستند صارف کے لیے میعاد ختم ہونے والے پشز کی فہرست بنائیں۔"
 
-#: ../../../app/views/pages/api.html.erb:172
+#: ../../../app/views/pages/api.html.erb:209
 msgid "HTTP Status Codes"
 msgstr "HTTP اسٹیٹس کوڈز"
 
-#: ../../../app/views/pages/api.html.erb:174
+#: ../../../app/views/pages/api.html.erb:211
 msgid "Successful request"
 msgstr "کامیاب درخواست"
 
-#: ../../../app/views/pages/api.html.erb:175
+#: ../../../app/views/pages/api.html.erb:212
 msgid "Push created"
 msgstr "پش بنایا گیا۔"
 
-#: ../../../app/views/pages/api.html.erb:176
+#: ../../../app/views/pages/api.html.erb:213
 msgid "Invalid request parameters"
 msgstr "غلط درخواست کے پیرامیٹرز"
 
-#: ../../../app/views/pages/api.html.erb:177
+#: ../../../app/views/pages/api.html.erb:214
 msgid "Authentication required or invalid token"
 msgstr "تصدیق درکار ہے یا غلط ٹوکن"
 
-#: ../../../app/views/pages/api.html.erb:178
+#: ../../../app/views/pages/api.html.erb:215
 msgid "Forbidden for current user"
 msgstr "موجودہ صارف کے لیے ممنوع ہے۔"
 
-#: ../../../app/views/pages/api.html.erb:179
+#: ../../../app/views/pages/api.html.erb:216
 msgid "Resource not found"
 msgstr "وسیلہ نہیں ملا"
 
-#: ../../../app/views/pages/api.html.erb:180
+#: ../../../app/views/pages/api.html.erb:217
 msgid "Validation error"
 msgstr "توثیق کی خرابی۔"
 
-#: ../../../app/views/pages/api.html.erb:186
+#: ../../../app/views/pages/api.html.erb:223
 msgid "For legacy API v1 documentation, see"
 msgstr "لیگیسی API v1 دستاویزات کے لیے، دیکھیں"
 
@@ -2195,7 +2392,6 @@ msgstr "خفیہ لنک کی میعاد ختم کریں اور اس کے بعد 
 #: ../../../app/views/pushes/_form.html.erb:116
 #: ../../../app/views/pushes/_qr_form.html.erb:106
 #: ../../../app/views/pushes/_url_form.html.erb:79
-#: ../../../app/views/pushes/preview.html.erb:63
 #: ../../../app/views/pushes/print_preview.html.erb:16
 msgid "(whichever comes first)"
 msgstr "(جو بھی پہلے آئے)"
@@ -2441,7 +2637,7 @@ msgstr "آڈٹ لاگ برائے %{push_id}"
 
 #: ../../../app/views/pushes/audit.html.erb:4
 #: ../../../app/views/pushes/index.html.erb:107
-#: ../../../app/views/pushes/preview.html.erb:107
+#: ../../../app/views/pushes/preview.html.erb:118
 msgid "Audit Log"
 msgstr "آڈٹ لاگ"
 
@@ -2727,102 +2923,93 @@ msgstr "آگے بڑھنے کے لیے یہاں کلک کریں۔"
 msgid "Push Preview"
 msgstr "پش پیش نظارہ"
 
-#: ../../../app/views/pushes/preview.html.erb:6
+#: ../../../app/views/pushes/preview.html.erb:8
 msgid "Push Created"
 msgstr "پش تخلیق کیا گیا۔"
 
-#: ../../../app/views/pushes/preview.html.erb:8
-msgid "Use this secret link to share it:"
-msgstr "اس کو شیئر کرنے کے لیے اس خفیہ لنک کا استعمال کریں:"
+#: ../../../app/views/pushes/preview.html.erb:10
+msgid "Copy the link or message below to share this push securely."
+msgstr ""
+"اس پش کو محفوظ طریقے سے شیئر کرنے کے لیے نیچے دیئے گئے لنک یا پیغام کو کاپی کر"
+"یں۔"
 
-#: ../../../app/views/pushes/preview.html.erb:14
+#: ../../../app/views/pushes/preview.html.erb:26
+msgid "QR code"
+msgstr "کیو آر کوڈ"
+
+#: ../../../app/views/pushes/preview.html.erb:28
+msgid "Scan to open the secret link on a mobile device."
+msgstr "موبائل ڈیوائس پر خفیہ لنک کو کھولنے کے لیے اسکین کریں۔"
+
+#: ../../../app/views/pushes/preview.html.erb:32
 msgid "Print & Share"
 msgstr "پرنٹ کریں اور شیئر کریں۔"
 
-#: ../../../app/views/pushes/preview.html.erb:19
-msgid "Generate a Printable Page for End Users"
-msgstr "آخری صارفین کے لیے ایک قابل پرنٹ صفحہ بنائیں"
+#: ../../../app/views/pushes/preview.html.erb:36
+msgid "Generate a printable page"
+msgstr "ایک پرنٹ ایبل صفحہ بنائیں"
 
-#: ../../../app/views/pushes/preview.html.erb:24
-#: ../../../app/views/pushes/preview.html.erb:26
-msgid "Optional Custom Message"
+#: ../../../app/views/pushes/preview.html.erb:39
+msgid "Optional custom message"
 msgstr "اختیاری حسب ضرورت پیغام"
 
-#: ../../../app/views/pushes/preview.html.erb:35
-msgid "Show Expiration Details"
+#: ../../../app/views/pushes/preview.html.erb:43
+msgid "Show expiration details"
 msgstr "میعاد ختم ہونے کی تفصیلات دکھائیں۔"
 
-#: ../../../app/views/pushes/preview.html.erb:42
+#: ../../../app/views/pushes/preview.html.erb:47
 msgid "Include ID"
 msgstr "ID شامل کریں۔"
 
-#: ../../../app/views/pushes/preview.html.erb:47
+#: ../../../app/views/pushes/preview.html.erb:50
 msgid "Generate"
 msgstr "پیدا کریں۔"
 
-#: ../../../app/views/pushes/preview.html.erb:57
-#: ../../../app/views/pushes/show.html.erb:41
-#: ../../../app/views/pushes/show.html.erb:75
-msgid "This secret link and all content will be deleted in"
-msgstr "اس خفیہ لنک اور تمام مواد کو حذف کر دیا جائے گا۔"
+#: ../../../app/views/pushes/preview.html.erb:71
+msgid "Expires when the first limit is reached"
+msgstr "پہلی حد تک پہنچنے پر ختم ہو جاتی ہے۔"
 
-#: ../../../app/views/pushes/preview.html.erb:60
-#: ../../../app/views/pushes/print_preview.html.erb:13
-#: ../../../app/views/pushes/show.html.erb:43
-#: ../../../app/views/pushes/show.html.erb:77
-msgid "day"
-msgid_plural "days"
-msgstr[0] "دن"
-msgstr[1] "دن"
-
-#: ../../../app/views/pushes/preview.html.erb:62
-#: ../../../app/views/pushes/print_preview.html.erb:15
-msgid "view"
-msgid_plural "views"
-msgstr[0] "دیکھیں"
-msgstr[1] "مناظر"
-
-#: ../../../app/views/pushes/preview.html.erb:68
+#: ../../../app/views/pushes/preview.html.erb:81
 msgid "Viewers can delete this push."
 msgstr "ناظرین اس پش کو حذف کر سکتے ہیں۔"
 
-#: ../../../app/views/pushes/preview.html.erb:70
+#: ../../../app/views/pushes/preview.html.erb:83
 msgid "Viewers cannot delete this push."
 msgstr "ناظرین اس پش کو حذف نہیں کر سکتے۔"
 
-#: ../../../app/views/pushes/preview.html.erb:77
+#: ../../../app/views/pushes/preview.html.erb:89
 msgid "Includes a"
 msgstr "شامل ہے a"
 
-#: ../../../app/views/pushes/preview.html.erb:77
+#: ../../../app/views/pushes/preview.html.erb:89
 msgid "1-click preliminary retrieval step"
 msgstr "1-کلک ابتدائی بازیافت کا مرحلہ"
 
-#: ../../../app/views/pushes/preview.html.erb:87
+#: ../../../app/views/pushes/preview.html.erb:101
 msgid "View This Push"
 msgstr "اس پش کو دیکھیں"
 
-#: ../../../app/views/pushes/preview.html.erb:91
-#: ../../../app/views/pushes/preview.html.erb:95
-#: ../../../app/views/pushes/preview.html.erb:99
+#: ../../../app/views/pushes/preview.html.erb:105
+#: ../../../app/views/pushes/preview.html.erb:109
+#: ../../../app/views/pushes/preview.html.erb:113
 msgid "Push Another"
 msgstr "ایک اور کو دھکا دیں۔"
 
-#: ../../../app/views/pushes/preview.html.erb:116
+#: ../../../app/views/pushes/preview.html.erb:134
 msgid ""
-"Tip: Pushing to an international user? Change the secret link language using t"
-"he dropdown menu to the right of the URL."
+"Tip: Change the secret link language using the dropdown to the right of the UR"
+"L."
 msgstr ""
-"ٹپ: ایک بین الاقوامی صارف کو دھکیل رہے ہیں؟ یو آر ایل کے دائیں طرف ڈراپ ڈاؤن م"
-"ینو کا استعمال کرتے ہوئے خفیہ لنک کی زبان کو تبدیل کریں۔"
+"ٹپ: URL کے دائیں طرف ڈراپ ڈاؤن کا استعمال کرتے ہوئے خفیہ لنک کی زبان کو تبدیل "
+"کریں۔"
 
-#: ../../../app/views/pushes/preview.html.erb:117
+#: ../../../app/views/pushes/preview.html.erb:136
 msgid ""
-"Alternatively auto-detection will select a language based on end-user browser "
-"settings."
+"Alternatively, auto-detection will select a language based on the recipient's "
+"browser settings."
 msgstr ""
-"متبادل طور پر خودکار پتہ لگانے سے صارف کے براؤزر کی ترتیبات کی بنیاد پر ایک زب"
-"ان کا انتخاب کیا جائے گا۔"
+"متبادل طور پر، خودکار شناخت وصول کنندہ کے براؤزر کی ترتیبات کی بنیاد پر زبان ک"
+"ا انتخاب کرے گی۔"
 
 #: ../../../app/views/pushes/print_preview.html.erb:1
 msgid "Your Secret URL"
@@ -2851,6 +3038,11 @@ msgstr "درج ذیل فائلوں کے ساتھ آپ کو درج ذیل پیغ�
 #: ../../../app/views/pushes/show.html.erb:15
 msgid "The message is blurred out.  Click below to reveal it."
 msgstr "پیغام دھندلا ہوا ہے۔ اسے ظاہر کرنے کے لیے نیچے کلک کریں۔"
+
+#: ../../../app/views/pushes/show.html.erb:41
+#: ../../../app/views/pushes/show.html.erb:75
+msgid "This secret link and all content will be deleted in"
+msgstr "اس خفیہ لنک اور تمام مواد کو حذف کر دیا جائے گا۔"
 
 #: ../../../app/views/pushes/show.html.erb:46
 #: ../../../app/views/pushes/show.html.erb:80
@@ -3041,13 +3233,30 @@ msgstr "کنسوننٹس"
 msgid "Reset to Defaults"
 msgstr "ڈیفالٹس پر ری سیٹ کریں۔"
 
+#: ../../../app/views/shared/_share_message.html.erb:5
+msgid "Optional message to share"
+msgstr "اشتراک کرنے کے لیے اختیاری پیغام"
+
+#: ../../../app/views/shared/_share_message.html.erb:6
+msgid ""
+"Copy and paste this into your email or chat. It includes the secret link and e"
+"xpiration details."
+msgstr ""
+"اسے کاپی کرکے اپنے ای میل یا چیٹ میں پیسٹ کریں۔ اس میں خفیہ لنک اور میعاد ختم "
+"ہونے کی تفصیلات شامل ہیں۔"
+
+#: ../../../app/views/shared/_share_message.html.erb:12
+#: ../../../app/views/shared/_share_message.html.erb:14
+msgid "Copy message"
+msgstr "پیغام کاپی کریں۔"
+
 #: ../../../app/views/shared/_topnav.html.erb:5
 msgid "Passwords"
 msgstr "پاس ورڈز"
 
 #: ../../../app/views/shared/_topnav.html.erb:25
 msgid "QR Codes"
-msgstr "QR کوڈز ᴮᴱᵀᴬ"
+msgstr "کیو آر کوڈز"
 
 #: ../../../app/views/users/first_runs/new.html.erb:1
 msgid "Password Pusher — First Run Setup"

@@ -35,7 +35,22 @@ Use the [hosted service](https://pwpush.com) or run your own instance with Docke
 | **🔒 Secure by default** | Encrypted storage, optional passphrase, expiry by views and/or time. Sensitive data is removed entirely once expired. |
 | **📋 Full audit trail** | See when links were created, viewed, and by whom (with logins). |
 | **🏠 Self-host or use hosted** | Use [pwpush.com](https://pwpush.com) or deploy your own—Docker, Kubernetes, Helm, or cloud. |
-| **🌐 Ready for teams** | 31 languages, light/dark theme, JSON API, CLI, and [many integrations](https://docs.pwpush.com/docs/3rd-party-tools/). |
+| **🌐 Ready for teams** | 31 languages, light/dark theme, JSON API, [official CLI & Chrome Extension](#tools--extensions), and [many integrations](https://docs.pwpush.com/docs/3rd-party-tools/). |
+
+---
+
+## Financial Supporters
+
+A heartfelt thank you to the companies and individuals who help keep Password Pusher running. Their support goes toward hosting, maintenance, support and continued development.
+
+| Supporter | |
+|---|---|
+| [<img width="392" height="134" alt="SerpApi" src="https://github.com/user-attachments/assets/f4c7369f-d56c-437f-8cb6-dd08c2129ed8" />](https://serpapi.com/?utm_source=pwpush) | SerpApi is the world’s leading provider of search data, pioneering APIs that turn search engine results into structured, developer-ready information. |
+| [WMACCESS](https://www.wmaccess.com/) |  Provides securities information and tax-relevant financial data, including securities master data and income data for comprehensive tax reporting. |
+
+A special thank you as well to every customer who [subscribed to a plan on pwpush.com](https://eu.pwpush.com/pricing) or purchased [Self-Hosted Pro](https://eu.pwpush.com/self-hosted-pricing) — your support directly funds the ongoing development of Password Pusher.
+
+Interested in supporting Password Pusher? Reach out at [support@pwpush.com](mailto:support@pwpush.com).
 
 ---
 
@@ -61,13 +76,13 @@ Use the [hosted service](https://pwpush.com) or run your own instance with Docke
 
 - **JSON API v2** — Modern `/api/v2` endpoints for create/retrieve/audit/active/expired workflows.
 - **Legacy API compatibility** — Existing `/p`, `/f`, `/r` API routes (v1 style) remain available for backwards compatibility.
-- **CLI** — Automate distribution with [CLI tools](https://docs.pwpush.com/docs/3rd-party-tools/) and scripts.
+- **CLI** — Official [pwpush CLI](https://github.com/pglombardo/pwpush-cli) plus [3rd-party tools](https://docs.pwpush.com/docs/3rd-party-tools/) and scripts.
 - **31 languages** — UI and secret-URL pages in 31 languages (courtesy of [Translation.io](https://translation.io/?utm_source=pwpush)).
 
 ### Trust & community
 
 - **Open source** — Apache 2.0; no black box. Written and maintained by [myself](https://github.com/pglombardo) and the team at [Apnotic](https://apnotic.com) with the help of contributors.
-- **14+ years in production** — Used to deliver millions of secrets; [actively maintained](https://github.com/pglombardo/PasswordPusher/graphs/contributors).
+- **15+ years in production** — Used to deliver millions of secrets; [actively maintained](https://github.com/pglombardo/PasswordPusher/graphs/contributors).
 - **Trusted worldwide** — Used by thousands of companies around the globe.
 
 ---
@@ -142,15 +157,27 @@ Production image build: [containers/docker/Dockerfile](containers/docker/Dockerf
 
 For API usage, CLI tools, and integrations:
 
+- **pwpush CLI**: [github.com/pglombardo/pwpush-cli](https://github.com/pglombardo/pwpush-cli) — Official command-line tool for pushing secrets from the terminal
 - API v2 docs: [docs.pwpush.com/docs/api-v2](https://docs.pwpush.com/docs/api-v2/)
 - OSS API endpoint reference in-app: `/api/v2/version` and `/api/v2/pushes`
-- 3rd-party tools and CLI integrations: [docs.pwpush.com/docs/3rd-party-tools](https://docs.pwpush.com/docs/3rd-party-tools/)
+- 3rd-party tools: [docs.pwpush.com/docs/3rd-party-tools](https://docs.pwpush.com/docs/3rd-party-tools/)
 
 Quick API v2 smoke test:
 
 ```bash
 curl -s https://YOUR_HOST/api/v2/version
 ```
+
+---
+
+## Tools & Extensions
+
+Enhance Password Pusher with these official companion tools:
+
+| CLI | Chrome Extension |
+|:---:|:---:|
+| [![pwpush CLI](https://img.shields.io/badge/CLI-pwpush--cli-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/pglombardo/pwpush-cli) | [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/djdnbhbnimfpfmnocchfhjahinieaacg) |
+| Command-line tool for pushing secrets from the terminal | Create pushes directly from your browser with self-hosted & APIv2 support |
 
 ---
 
@@ -220,6 +247,10 @@ More: [Contributors](https://github.com/pglombardo/PasswordPusher/graphs/contrib
 ---
 
 ## Donations
+
+🛑 **Because of some abuse, the donation link is temporarily disabled.  Contact support@pwpush.com if you'd like to donate**
+
+--> _To those testing various cards and failing, do what you do but please not here.  We can't risk getting the account flagged in Stripe - we're not big enough to deal with that type of damage.  I hope you can understand our position._
 
 Donations are **optional**. Password Pusher is and will remain open source and free to use.
 

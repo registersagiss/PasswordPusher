@@ -34,6 +34,8 @@ class PasswordCreationTest < ActionDispatch::IntegrationTest
     follow_redirect!
     assert_response :success
     assert_select "h2", "Push Created"
+    assert_match "Optional message to share", response.body
+    assert_select "textarea#share-message-text", minimum: 1
 
     # Password page
     get request.url.sub("/preview", "")
@@ -128,7 +130,7 @@ class PasswordCreationTest < ActionDispatch::IntegrationTest
     assert(deletable_checkbox.length == 1)
 
     # DELETABLE_PASSWORDS_DEFAULT determines initial check state
-    if Settings.pw.deletable_pushes_default == true
+    if Settings.pw.deletable_pushes_default
       assert(deletable_checkbox.first.attributes["checked"].value == "checked")
     else
       assert(deletable_checkbox.first.attributes["checked"].nil?)

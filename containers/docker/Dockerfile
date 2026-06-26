@@ -2,7 +2,7 @@
 ARG BUNDLE_WITHOUT=development:test
 ARG BUNDLE_DEPLOYMENT=true
 
-FROM ruby:4.0.3-alpine AS build-env
+FROM ruby:4.0.5-alpine AS build-env
 
 # include global args
 ARG BUNDLE_WITHOUT
@@ -53,8 +53,8 @@ RUN yarn install --frozen-lockfile
 # Copy source code - this should be done as late as possible
 COPY ./ ${APP_ROOT}/
 
-# Full multi-theme CSS (build_themes.js) runs during assets:precompile only when
-# PWP_DOCKER_ASSET_BUILD=1 (see config/application.rb SKIP_CSS_BUILD policy).
+# Full multi-theme CSS (build_themes.js) runs during assets:precompile.
+# See config/application.rb for the CSS build policy.
 
 # SECRET_KEY_BASE must be set at runtime via environment variable
 # Do NOT hardcode secrets in Docker images for security reasons.
@@ -72,13 +72,13 @@ RUN if [ "$TARGETARCH" = "amd64" ]; then \
     fi
 
 # Precompile Rails assets - this layer will be rebuilt when assets change
-RUN PWP_DOCKER_ASSET_BUILD=1 SECRET_KEY_BASE_DUMMY=1 bundle exec rails assets:precompile
+RUN SECRET_KEY_BASE_DUMMY=1 bundle exec rails assets:precompile
 
 RUN rm -rf tmp/cache tmp/pids tmp/sockets app/assets/images/features
 
 ################## Build done ##################
 
-FROM ruby:4.0.2-alpine
+FROM ruby:4.0.5-alpine
 
 # include global args
 ARG BUNDLE_WITHOUT
