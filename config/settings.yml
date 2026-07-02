@@ -123,9 +123,9 @@ cloudflare_proxy: false
 # Like regular pushes, they expire after a set time or amount of views.
 #
 # Environment variable override:
-# PWP__ENABLE_URL_PUSHES='false'
+PWP__ENABLE_URL_PUSHES='false'
 #
-enable_url_pushes: false
+# enable_url_pushes: false
 
 ### File Uploads
 #
@@ -133,9 +133,9 @@ enable_url_pushes: false
 #
 #
 # Environment variable override:
-# PWP__ENABLE_FILE_PUSHES='false'
+PWP__ENABLE_FILE_PUSHES='false'
 #
-enable_file_pushes: false
+# enable_file_pushes: false
 
 ### QR Code Pushes
 #
@@ -144,9 +144,9 @@ enable_file_pushes: false
 #
 #
 # Environment variable override:
-# PWP__ENABLE_QR_PUSHES='false'
+PWP__ENABLE_QR_PUSHES='false'
 #
-enable_qr_pushes: false
+# enable_qr_pushes: false
 
 ### Allow Anonymous
 #
@@ -194,7 +194,7 @@ login_session_timeout: "2 hours"
 # not allow any further user account creation.
 #
 # Environment variable override:
-# PWP__DISABLE_SIGNUPS='false'
+PWP__DISABLE_SIGNUPS='true'
 #
 disable_signups: true
 
@@ -205,7 +205,7 @@ disable_signups: true
 # useful for anonymous-only deployments.
 #
 # Environment variable override:
-# PWP__DISABLE_LOGINS='true'
+PWP__DISABLE_LOGINS='true'
 #
 disable_logins: true
 
